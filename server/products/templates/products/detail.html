@@ -1,0 +1,13 @@
+{% extends 'master.html' %}
+
+{% block page_title %}
+Detail_page
+{% endblock %}
+
+{% block page_content %}
+    {% if object %}
+    {{ object }}
+    {% else %}
+    Product does not exists
+    {% endif %}
+{% endblock %}
