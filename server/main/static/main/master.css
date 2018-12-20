@@ -1,0 +1,20 @@
+.menu_style_type {
+    list-style-type: none;
+
+}
+
+a{
+    color: rgb(0,91,209);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(110,164,219);
+}
+a:hover {
+    color: rgb(0,91,209);
+    text-decoration: underline;
+}
+.first_header_div{
+    background-color: grey;
+    height: 50px;
+}
