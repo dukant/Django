@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About_page</title>
-</head>
-<body>
+{% extends 'master.html' %}
+
+{% block page_title %}
+About_page
+{% endblock %}
+
+{% block page_content %}
     <h1>
         This is about page
     </h1>
-    <ul>
-        <li>
-            <a href="/contacts/">Контакты</a>
-            <a href="/about/">О проекте</a>
-            <a href="/">Главная</a>
-        </li>
-    </ul>
-</body>
-</html>
+    <span>
+        {{ text }}
+    </span>
+{% endblock %}
