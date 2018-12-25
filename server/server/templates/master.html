@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +7,30 @@
     <title>
         {% block page_title %}{% endblock %}
     </title>
+
+    {% block page_styles%}
+    <link rel="stylesheet" href="{% static 'main\master.css' %}">
+    <link rel="stylesheet" href="{% static 'main\index.css' %}">
+    {% endblock %}
 </head>
 <body>
+    <header>
+        <div class="first_header_div">
+            <span>
+                Дизайн из 90-х
+            </span>
+        </div>
+        <div>
+            <h1>Магазин музыкальных товаров "MuzShop"</h1>
+        </div>
 
-    <ul>
+    </header>
+    <ul class="menu_style_type">
         <li>
-            <a href="/contacts/">Контакты</a>
-            <a href="/about/">О проекте</a>
-            <a href="/">Главная</a>
+            <a href="{% url 'main:index' %}">Главная</a>
+            <a href="{% url 'products:index' %}">Каталог</a>
+            <a href="{% url 'main:contacts' %}">Контакты</a>
+            <a href="{% url 'main:about' %}">О проекте</a>
         </li>
     </ul>
 <section>

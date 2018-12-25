@@ -5,11 +5,13 @@ List_page
 {% endblock %}
 
 {% block page_content %}
-    <ul>
+    <ul class="products-list">
     {% for item in products %}
-    <li>
-        {{ item }}
-    </li>
+        <li class="products-list_item">
+            <a class="products-list_item-link" href="{% url 'products:detail' pk=item.id %}">
+                {{ item.name }}
+            </a>
+        </li>
     {% endfor %}
     </ul>
 {% endblock %}

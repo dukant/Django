@@ -1,8 +1,20 @@
 {
   "products" : [
-    "guitars",
-    "bass-guitars",
-    "piano",
-    "supply"
+    {
+      "name": "guitars",
+      "description": "this is guitars"
+    },
+    {
+      "name": "bass-guitars",
+      "description": "this is bass-guitars"
+    },
+    {
+      "name": "piano",
+      "description": "this is piano"
+    },
+    {
+      "name": "supply",
+      "description": "this is supply"
+    }
   ]
 }

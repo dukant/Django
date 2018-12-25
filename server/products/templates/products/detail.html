@@ -6,8 +6,14 @@ Detail_page
 
 {% block page_content %}
     {% if object %}
-    {{ object }}
+        <h1 class="object_name">
+            {{ object.name|title }}
+        </h1>
+        <span class="object_description">
+            {{ object.description|title }}
+        </span>
+
     {% else %}
-    Product does not exists
+        Product does not exists
     {% endif %}
 {% endblock %}

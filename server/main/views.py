@@ -4,23 +4,15 @@ from django.http import HttpResponse
 
 
 def main_view(request):
-
-    # response_string = render_to_string(
-    #     'main\index.html', {
-    #         'title': 'Muzshops main page',
-    #         'subtitle': 'Yours muzshop',
-    #         'username': request.user,
-    #     }
-    # )
-    # return HttpResponse(response_string)
     return render(
         request,
         "main\index.html",
         {
-            'title': 'Muzshops main page',
-            'subtitle': 'Yours muzshop',
-            'username': request.user,
-            'is_active': False,
+            'title': 'Рады Вас видеть',
+            'subtitle': 'Новогодние скидки!!!',
+            # 'username': request.user,
+            'username': "anton",
+            'is_active': True,
         }
     )
 
